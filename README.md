@@ -20,7 +20,7 @@ To get this app running on your computer and mobile device, from the Terminial:
 
 ---
 
-![](https://cldup.com/oBV5nvMnCF.gif)
+![](https://cldup.com/7NJCAbSIt4.gif)
 
 ---
 
