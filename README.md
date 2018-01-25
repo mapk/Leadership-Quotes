@@ -8,8 +8,8 @@ This app connects to the WordPress website, [leadershipquotes.mystagingwebsite.c
 ## Start Here
 
 To get this app running on your computer and mobile device, from the Terminial:
-1. Clone this repo: `git clone git@github.com:mapk/Leadership-Cards.git`
-2. `cd Leadership-Cards`
+1. Clone this repo: `git clone git@github.com:mapk/Leadership-Quotes.git`
+2. `cd Leadership-Quotes`
 3. `npm install`
 4. `npm start`
 5. At this point a QR code should appear in the Terminal window with some options. 
