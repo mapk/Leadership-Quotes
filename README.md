@@ -19,6 +19,9 @@ To get this app running on your computer and mobile device, from the Terminial:
 
 
 ---
+
+![](https://cldup.com/oBV5nvMnCF.gif)
+
 ---
 
 All the content below is from the bootstrap. If you run into any problems, it might help.
