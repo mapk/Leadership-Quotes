@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 ## React Native app using the WordPress REST API
 This app connects to the WordPress website, [leadershipquotes.mystagingwebsite.com](https://leadershipquotes.mystagingwebsite.com), via the [WP REST API](https://developer.wordpress.org/rest-api/) to pull content from the media library. The purpose is to just randomly display leadership quotes on one's device and change with each tap of a button.
 
+**Caveat:** To get this app to randomly sort through quotes, I had to write a plugin for WordPress that extended the API endpoints to provide me with all media IDs. You can see this plugin on this Github Repository: https://github.com/mapk/wp-rest-api-v2-media-ids
+
 ## Start Here
 
 To get this app running on your computer and mobile device, from the Terminial:
