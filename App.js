@@ -108,7 +108,7 @@ export default class LeadershipCards extends Component {
             underlayColor='#ccc'
             onPress={this.fetchData}
           >
-            <Text style={styles.buttonText}>Next card</Text>
+            <Text style={styles.buttonText}>Next quote</Text>
           </TouchableHighlight>
         </View>
 
