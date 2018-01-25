@@ -1,5 +1,26 @@
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
+## React Native app using the WordPress REST API
+This app connects to the WordPress website, [leadershipquotes.mystagingwebsite.com](https://leadershipquotes.mystagingwebsite.com), via the [WP REST API](https://developer.wordpress.org/rest-api/) to pull content from the media library. The purpose is to just randomly display leadership quotes on one's device and change with each tap of a button.
+
+## Start Here
+
+To get this app running on your computer and mobile device, from the Terminial:
+1. Clone this repo: `git clone git@github.com:mapk/Leadership-Cards.git`
+2. `cd Leadership-Cards`
+3. `npm install`
+4. `npm start`
+5. At this point a QR code should appear in the Terminal window with some options. 
+6. Install Expo on your mobile device.
+7. Open Expo and select `Scan QR Code` and point your device at the QR code on your screen. This will open the React Native app in your device.
+8. Click the button in the app to get a random leadership quote.
+
+
+---
+---
+
+All the content below is from the bootstrap. If you run into any problems, it might help.
+
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
 ## Table of Contents
