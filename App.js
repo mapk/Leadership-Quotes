@@ -5,6 +5,7 @@ const REQUEST_URL_BASE  = 'https://leadershipquotes.mystagingwebsite.com/wp-json
 const POSTS_URL_PATH    = 'wp/v2/media/';
 const GET_MEDIA_IDS_PATH = 'media-ids/v1/get-all-media-ids';
 
+// Setting a windowSize variable to be used in the styles below.
 const windowSize = Dimensions.get('window');
 
 export default class LeadershipCards extends Component {
@@ -18,7 +19,7 @@ export default class LeadershipCards extends Component {
 
   getInitialState() {
     return {
-      //card is initially set to null so that the loading message shows
+      // Card is initially set to null so that the loading message shows.
       card: null,
       cardIDs: null,
       currentID: null
@@ -33,7 +34,6 @@ export default class LeadershipCards extends Component {
     fetch(REQUEST_URL_BASE + GET_MEDIA_IDS_PATH)
     .then((response) => response.json())
     .then((responseData) => {
-        // this.setState() will cause the new data to be applied to the UI that is created by the `render` function below
         this.setState( {
             cardIDs: responseData
         } );
@@ -58,13 +58,13 @@ export default class LeadershipCards extends Component {
   fetchData() {
     let currentID = this.getRandID();
     this.setState({
-      // we'll also set card to null when loading new cards so that the loading message shows
+      // We'll also set card to null when loading new cards so that the loading message shows.
       card: null,
     });
     fetch(REQUEST_URL_BASE + POSTS_URL_PATH + currentID)
       .then((response) => response.json())
       .then((responseData) => {
-        // this.setState() will cause the new data to be applied to the UI that is created by the `render` function below
+        // this.setState() will cause the new data to be applied to the UI that is created by the `render` function below.
         this.setState({
           card: { pic: responseData.guid.rendered, content: responseData.title.rendered }
         });
@@ -72,8 +72,8 @@ export default class LeadershipCards extends Component {
       .done();
   }
 
-  // instead of immediately rendering the template, we now check if there is data in the 'card' variable
-  // and render a loading view if it's empty, or the 'card' template if there is data
+  // Instead of immediately rendering the template, we now check if there is data in the 'card' variable
+  // and render a loading view if it's empty, or the 'card' template if there is data.
   render() {
     if ( !this.state.card ) {
       return this.renderLoadingView();
@@ -81,7 +81,7 @@ export default class LeadershipCards extends Component {
     return this.renderCard();
   }
 
-  // the loading view template just shows the message "Loading cards..."
+  // The loading view template just shows the message "Wait for it..."
   renderLoadingView() {
     return (
       <View style={styles.container}>
@@ -92,7 +92,7 @@ export default class LeadershipCards extends Component {
     );
   }
 
-  // this is the original render function, now renamed to renderCard, which will render our main template 
+  // This is the original render function, now renamed to renderCard, which will render our main template. 
   renderCard() {
     let quote = this.state.card.pic;
     return (
