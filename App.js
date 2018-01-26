@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ActivityIndicator, ListView, Text, View, StyleSheet, Dimensions, TouchableHighlight, Image } from 'react-native';
+import { Text, View, StyleSheet, Dimensions, TouchableHighlight, Image } from 'react-native';
 
 const REQUEST_URL_BASE  = 'https://leadershipquotes.mystagingwebsite.com/wp-json/';
 const POSTS_URL_PATH    = 'wp/v2/media/';
